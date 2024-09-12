@@ -42,10 +42,10 @@ body {
 }
 .open {
   transform: translate(0px);
-  transition-duration: 0.5s;
+  transition-duration: 0.3s;
 }
 .close {
-  transition-duration: 0.5s;
+  transition-duration: 0.3s;
   transform: translate(-300px);
 }
 nav {
