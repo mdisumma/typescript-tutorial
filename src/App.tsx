@@ -14,7 +14,7 @@ import "./App.css";
 function App() {
   const [navValue, setNavValue] = useState("");
 
-  function navHandler(e) {
+  function navHandler(e: any) {
     setNavValue(e.target.id);
   }
   return (

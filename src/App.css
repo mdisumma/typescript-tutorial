@@ -1,5 +1,5 @@
 :root {
-  --blue: #b5e1ff;
+  --blue: #44b1f9;
   --white: #ffffff;
   --secondary-color: #2ecc71;
   --font-size-large: 18px;
@@ -16,31 +16,41 @@ body {
   background-color: var(--blue);
   text-align: center;
   padding: 2rem;
+  color: var(--white);
 }
 .header h1 {
   margin: 0;
 }
 .menu {
-  border: 1px solid var(--blue);
+  font-weight: 800;
+  color: var(--white);
+  border: none;
   position: absolute;
-  top: 0px;
-  left: 30vw;
+  top: 30px;
+  left: 10px;
   padding: 1rem;
+  background-color: transparent;
+}
+.menu:hover {
   background-color: var(--blue);
 }
 
-.navigation-open {
+.navigation {
+  border: 1px solid var(--blue);
   position: absolute;
-  width: 30vw;
+  width: 300px;
+}
+.open {
+  transform: translate(0px);
   transition-duration: 0.5s;
 }
-.navigation-close {
-  position: absolute;
-  width: 30vw;
+.close {
   transition-duration: 0.5s;
-  transform: translate(-30vw);
+  transform: translate(-300px);
 }
-
+nav {
+  margin-top: -1px;
+}
 nav ul {
   list-style: none;
   margin: 0;
@@ -57,12 +67,13 @@ nav ul li {
 nav ul li:hover {
   cursor: pointer;
   background-color: var(--blue);
+  color: var(--white);
 }
 .container {
   display: flex;
 }
 .component {
-  width: 600px;
+  width: 100%;
   margin: 0 auto;
 }
 .component h2 {
