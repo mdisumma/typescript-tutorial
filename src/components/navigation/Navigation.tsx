@@ -1,6 +1,16 @@
+import { useState } from "react";
+
 export default function Navigation() {
+  const [state, setState] = useState(true);
+
+  function handleClick() {
+    setState(!state);
+  }
   return (
-    <nav className="navigation">
+    <nav className={state ? "navigation-open" : "navigation-close"}>
+      <button onClick={handleClick} className="menu">
+        {state ? "menu <<" : "menu >>"}
+      </button>
       <ul>
         <li>Compatibility with JavaScript</li>
         <li>Static Typing</li>
