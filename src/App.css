@@ -4,6 +4,7 @@
   --secondary-color: #2ecc71;
   --font-size-large: 18px;
 }
+
 body * {
   box-sizing: border-box;
 }
@@ -20,7 +21,7 @@ body {
   margin: 0;
 }
 .menu {
-  border: 1px solid var(--white);
+  border: 1px solid var(--blue);
   position: absolute;
   top: 0px;
   left: 30vw;
@@ -50,16 +51,20 @@ nav ul li {
   width: 100%;
   line-height: 2rem;
   padding: 1rem;
-  border: 1px solid var(--white);
+  border: 1px solid var(--blue);
+  background-color: var(--white);
+}
+nav ul li:hover {
+  cursor: pointer;
   background-color: var(--blue);
 }
 .container {
   display: flex;
 }
-.page {
+.component {
   width: 600px;
   margin: 0 auto;
 }
-.page h2 {
+.component h2 {
   text-align: center;
 }

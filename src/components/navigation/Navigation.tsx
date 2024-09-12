@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export default function Navigation() {
+export default function Navigation({ onClick }) {
   const [state, setState] = useState(true);
 
   function handleClick() {
@@ -11,17 +11,15 @@ export default function Navigation() {
       <button onClick={handleClick} className="menu">
         {state ? "menu <<" : "menu >>"}
       </button>
-      <ul>
-        <li>Compatibility with JavaScript</li>
-        <li>Static Typing</li>
-        <li>Type Inference</li>
-        <li>Optional and Default Parameters</li>
-        <li>Interfaces</li>
-        <li>Enum Types</li>
-        <li>Generics</li>
-        <li>Modules and Namespaces</li>
-        <li>Advanced Object-Oriented Features</li>
-        <li>Enhanced IDE Support</li>
+      <ul onClick={onClick}>
+        <li id="component1">How to start</li>
+        <li id="component2">Compatibility with JavaScript</li>
+        <li id="component3">Static Typing</li>
+        <li id="component4">Type Inference</li>
+        <li id="component5">Optional and Default Parameters</li>
+        <li id="component6">Interfaces</li>
+        <li id="component7">Enum Types</li>
+        <li id="component8">Generics</li>
       </ul>
     </nav>
   );
