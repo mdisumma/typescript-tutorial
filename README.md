@@ -36,15 +36,14 @@ To get started with the TypeScript Tutorial Application, follow these steps:
 2. **install Dependencies:**:
 
 Run the following command to install the required dependencies:
-
-npm install
-
-3. **Run the Application:**:
+`bash
+   npm install
+    ` 3. **Run the Application:**:
 
 Start the development server using Vite:
-
-npm run dev
-
+`bash
+  npm run dev
+    `
 This will start the application and open it in your default web browser. Vite will automatically reload the page when you make changes to the code.
 
 4. **Explore the Tutorials:**:
