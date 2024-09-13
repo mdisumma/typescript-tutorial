@@ -6,7 +6,7 @@ export default function Component1() {
       <h2>How to Get Started with TypeScript</h2>
       <ol>
         <li>
-          <span className="bold">Install Node.js and npm:</span> ypeScript
+          <span className="bold">Install Node.js and npm:</span> TypeScript
           requires Node.js and npm (Node Package Manager). If you don’t have
           them installed, download the latest version of Node.js from
           nodejs.org. npm is bundled with it.
@@ -18,7 +18,7 @@ export default function Component1() {
           This will globally install TypeScript on your system.
         </li>
         <li>
-          <span className="bold">Initialize a Project:</span>To start a new
+          <span className="bold">Initialize a Project:</span> To start a new
           TypeScript project, navigate to your project folder in the terminal
           and run:
           <Code code={"tsc --init"} />
@@ -43,15 +43,16 @@ console.log(message);`}
           file.
         </li>
         <li>
-          <span className="bold">Run the JavaScript File:</span>After
+          <span className="bold">Run the JavaScript File:</span> After
           compilation, you can execute the resulting JavaScript file using
           Node.js:
           <Code code={`node index.js`} />
         </li>
         <li>
-          <span className="bold">Use IDEs: </span>Install an IDE with TypeScript
-          support like Visual Studio Code, which provides autocompletion, error
-          checking, and debugging tools to improve productivity.
+          <span className="bold">Use IDEs: </span> Install an IDE with
+          TypeScript support like Visual Studio Code, which provides
+          autocompletion, error checking, and debugging tools to improve
+          productivity.
         </li>
       </ol>
       <p>
