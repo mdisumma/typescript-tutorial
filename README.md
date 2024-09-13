@@ -27,11 +27,11 @@ To get started with the TypeScript Tutorial Application, follow these steps:
 
 1. **Clone the Repository**:
 
-   ```bash
-   git clone https://github.com/mdisumma/typescript-tutorial.git
-   cd typescript-tutorial
+```bash
+git clone https://github.com/mdisumma/typescript-tutorial.git
+cd typescript-tutorial
 
-   ```
+```
 
 2. **install Dependencies:**:
 
