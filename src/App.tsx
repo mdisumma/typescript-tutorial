@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Header from "./components/header/Header";
 import Navigation from "./components/navigation/Navigation";
+import ComponentStart from "./components/body/ComponentStart";
 import Component1 from "./components/body/Component1";
 import Component2 from "./components/body/Component2";
 import Component3 from "./components/body/Component3";
@@ -12,16 +13,17 @@ import Component8 from "./components/body/Component8";
 import "./App.css";
 
 function App() {
-  const [navValue, setNavValue] = useState("");
+  const [navValue, setNavValue] = useState("componentStart");
 
   function navHandler(e: any) {
     setNavValue(e.target.id);
   }
   return (
     <div>
-      <Header />
+      <Header onClick={navHandler} />
       <div className="container">
         <Navigation onClick={navHandler} />
+        {navValue === "componentStart" && <ComponentStart />}
         {navValue === "component1" && <Component1 />}
         {navValue === "component2" && <Component2 />}
         {navValue === "component3" && <Component3 />}

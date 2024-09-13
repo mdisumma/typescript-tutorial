@@ -19,6 +19,7 @@ body {
   color: var(--white);
 }
 .header h1 {
+  cursor: pointer;
   margin: 0;
 }
 .menu {
@@ -73,9 +74,25 @@ nav ul li:hover {
   display: flex;
 }
 .component {
-  width: 100%;
+  width: 740px;
   margin: 0 auto;
+  line-height: 2rem;
 }
 .component h2 {
   text-align: center;
+}
+.bold {
+  font-weight: 600;
+}
+.code {
+  display: block;
+  padding: 1rem;
+  margin: 1rem 0;
+  width: 100%;
+  background-color: black;
+  border-radius: 1rem;
+  color: var(--white);
+}
+ol li {
+  margin: 1rem;
 }
